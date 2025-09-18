@@ -4,10 +4,10 @@ import pickle
 # Load the saved model
 with open("linear_regression_model.pkl", "rb") as f:
     model = pickle.load(f)
-
+print("code is tamil")
 app = Flask(__name__)
 
-
+print("code is Abi")
 @app.route("/predict", methods=["POST"])
 def predict():
     # Get the input data as JSON
